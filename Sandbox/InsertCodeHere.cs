@@ -22,6 +22,8 @@ namespace Sandbox
             int noOf100krBills = 0;
             int changeLeft = changeToPayBack;
 
+            // Tilføjer while loops som kører byttepengene igennem og fordeler dem over mindst muligt antal mønter/sedler
+
             while (changeLeft >= 100)
             {
                 noOf100krBills = noOf100krBills + 1;
