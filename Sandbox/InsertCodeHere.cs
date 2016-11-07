@@ -20,7 +20,22 @@ namespace Sandbox
             int noOf1krCoins = 0;
             int noOf10krCoins = 0;
             int noOf100krBills = 0;
+            int changeLeft = changeToPayBack;
 
+            while (changeLeft >= 100)
+            {
+                noOf100krBills = noOf100krBills + 1;
+                changeLeft = changeLeft - 100;
+            }
+
+            while (changeLeft >= 10)
+            {
+                noOf10krCoins = noOf10krCoins + 1;
+                changeLeft = changeLeft - 10;
+            }
+
+                noOf1krCoins = changeLeft;
+            
 
             // YOUR JOB: Add code to calculate the correct change
 
